@@ -1,0 +1,255 @@
+.second-section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.card {
+	width: 1530px;
+	height: 680px;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 63px;
+}
+
+.card__background {
+	width: 978px;
+	height: 540px;
+	background: linear-gradient(147.52deg, #880002 6.2%, #350001 112.76%);
+	position: absolute;
+	top: 50px;
+	left: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.card__logo {
+	margin-left: -50px;
+}
+
+.card__container {
+	width: 1140px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	position: relative;
+	margin-top: 50px;
+}
+
+.card__title {
+	width: 100%;
+	font-family: "Bebas Neue";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 50px;
+	letter-spacing: 2px;
+	color: $black;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	position: absolute;
+	left: 0px;
+	top: -50px;
+}
+
+.card__left {
+	width: 590px;
+	height: 540px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	// margin-top: -86px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.card__left-img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.card__left-galary {
+	width: 569px;
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card__galary-fotos {
+	width: 140px;
+	height: 90px;
+	position: relative;
+	cursor: pointer;
+}
+
+.card__galary-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 140px;
+	height: 90px;
+}
+
+.card__info-sale {
+	font-family: "Montserat";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 36px;
+	color: $white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.card__right {
+	width: 450px;
+	// margin-top: -55px;
+	height: auto;
+}
+
+.card__table {
+	height: 330px;
+	font-family: "Montserat";
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 140%;
+	color: #101010;
+	margin-bottom: 10px;
+	tr td:first-child {
+		font-weight: bold;
+	}
+	tr td:last-child {
+		text-align: right;
+		min-width: 200px;
+	}
+}
+
+.size__btns-group {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.size__btn {
+	border: none;
+	background: none;
+	appearance: none;
+	width: 50px;
+	height: 32px;
+	position: relative;
+	border: 1px solid $grey;
+	font-family: "Montserat";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 140%;
+	color: $black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+	transition: 0.3s ease;
+	outline: none;
+	cursor: pointer;
+}
+
+.size__btn:last-child {
+	margin-right: 0px;
+}
+
+.size {
+	position: absolute;
+	font-family: "Montserat";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 140%;
+	color: $black;
+	bottom: -40px;
+	left: 50%;
+	transform: translateX(-50%) rotate(-90deg);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s ease;
+}
+
+.size:before {
+	content: "";
+	position: absolute;
+	right: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 7px;
+	height: 4px;
+	border: 7px solid transparent;
+	border-left: 7px solid $dark-red;
+}
+
+.size__btn.active {
+	border: 1px solid $dark-red;
+	.size {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.card .price {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	margin-top: 10px;
+}
+
+.card .old__price {
+	border: none;
+}
+
+.card .old__price:before {
+	display: none;
+}
+
+.card .old__price:after {
+	background-color: $black;
+}
+
+.card__form {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.card__form-input {
+	background: #F5F5F5;
+	box-shadow: inset 5px 5px 7px rgba(0, 0, 0, 0.25);
+	width: 340px;
+	height: 50px;
+	line-height: 50px;
+	padding: 20px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: $black;
+}
+
+.card__form-input::placeholder {
+	color: $black;
+}
+

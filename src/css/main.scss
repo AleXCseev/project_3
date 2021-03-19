@@ -9,7 +9,7 @@
 
 body {
 	font-size: 15px;
-	font-family: "Poppins", sans-serif;
+	font-family: "Montserat", sans-serif;
 	// font-weight: normal;
 }
 
@@ -20,4 +20,8 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
+}
+
+img {
+	user-select: none;
 }
