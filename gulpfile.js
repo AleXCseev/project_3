@@ -13,6 +13,7 @@ const styleFiles = [
 	"./src/css/header.scss",
 	"./src/css/first-section.scss",
 	"./src/css/second-section.scss",
+	"./src/css/sprey-section.scss",
 	"./src/css/reviews.scss",
 	"./src/css/footer.scss",
 	"./src/css/sliders.scss",

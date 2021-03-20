@@ -59,6 +59,7 @@
 	position: absolute;
 	left: 0px;
 	top: -50px;
+	z-index: 50;
 }
 
 .card__left {
@@ -76,9 +77,73 @@
 
 .card__left-img {
 	position: absolute;
-	top: 0;
+	top: 0px;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.card__3 .card__left-img {
+	top: -70px;
+}
+
+.card__toggle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 172px;
+	height: 30px;
+	margin-bottom: 25px;
+	position: relative;
+	z-index: 20;
+}
+
+.card__toggle label {
+	font-family: "Montserat";
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 140%;
+	color: $white;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.card__toggle input {
+	display: none;
+}
+
+.color__check {
+	width: 60px;
+	height: 30px;
+	background: #7A0B0B;
+	box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.6);
+	border-radius: 30px;
+	position: relative;
+}
+
+.color__check::before {
+	content: "";
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) translateX(-15px);
+	background-color: $white;
+	border-radius: 100%;
+	transition: 0.3s ease;
+}
+
+.card__toggle input:checked + .color__check::before {
+	transform: translate(-50%, -50%) translateX(15px);
+	background-color: $black;
+}
+
+.card__3 .color__check::before {
+	background-color: #FDA923;
 }
 
 .card__left-galary {
@@ -233,6 +298,10 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
+}
+
+.card__form .order__link {
+	margin-bottom: 0px;
 }
 
 .card__form-input {
