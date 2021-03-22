@@ -96,6 +96,7 @@ main {
 	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
+	// transition: all 1s ease;
 }
 
 .advantages.active {
@@ -138,6 +139,7 @@ main {
 	position: absolute;
 	opacity: 0;
 	background-color: transparent;
+	transition: 1s ease;
 }
 
 .rotation__btn.active {
@@ -179,6 +181,7 @@ main {
 	transform: translate(-50%);
 	opacity: 0;
 	visibility: hidden;
+	transition: .5s ease;
 }
 
 .rotation__boot.active {

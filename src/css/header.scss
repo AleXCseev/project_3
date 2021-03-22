@@ -33,6 +33,7 @@
 	left: -420px;
 	bottom: -60px;
 	z-index: 10;
+	transition: all 1s ease;
 }
 
 .header__men.active {
@@ -44,6 +45,7 @@
 	opacity: 0;
 	visibility: hidden;
 	width: 530px;
+	transition: all 1s ease;
 }
 
 .header__boots-black {
@@ -55,8 +57,9 @@
 	visibility: visible;
 }
 .boot1.header__boots-white {
-	top: 0;
+	top: -120px;
 	left: -100px;
+	width: 400px;
 }
 
 .boot2.header__boots-white {
@@ -65,8 +68,9 @@
 }
 
 .boot1.header__boots-black {
-	top: 0;
+	top: -140px;
 	left: -50px;
+	width: 400px;
 }
 
 .boot2.header__boots-black {
@@ -255,7 +259,7 @@
 	border: none;
 	width: 200px;
 	height: 140px;
-	transform: skew(30deg);
+	transform: skew(25deg);
 	background:  linear-gradient(147.52deg, #880002 6.2%, #350001 112.76%);
 	transition: 0.3s ease;
 	cursor: pointer;
@@ -271,6 +275,6 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%) skew(-30deg);
+	transform: translate(-50%, -50%) skew(-25deg);
 	width: 100px;
 }

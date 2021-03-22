@@ -1,0 +1,156 @@
+footer {
+	width: 100%;
+	height: 570px;
+	background-color: $black;
+	background-image: url("../img/header-smoke1.png"), url("../img/header-smoke2.png");
+	background-size: 50%, 50%;
+	background-position: left bottom, right top;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.footer__red-line {
+	width: 100%;
+	height: 381px;
+	position: absolute;
+	top: 76px;
+	left: 0;
+	background: linear-gradient(147.52deg, #880002 6.2%, #350001 112.76%);
+}
+
+.footer__man {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.footer__boot1 {
+	width: 300px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) rotate(60deg);
+	margin-left: -500px;
+	top: -190px;
+
+}
+
+.footer__boot2 {
+	width: 400px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-left: -400px;
+	top: 100px;
+
+}
+
+.footer__logo {
+	position: absolute;
+	top: 0px;
+	right: 10%;
+	// transform: translateX(-50%);
+	width: 500px;
+}
+
+.footer__sale {
+	font-family: "Bebas Neue";
+	font-weight: bold;
+	font-size: 96px;
+	line-height: 96px;
+	letter-spacing: 5px;
+	color: $dark-red;
+	position: absolute;
+}
+
+.footer__sale1 {
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-left: 220px;
+	color: rgba(237, 0, 3, 0.2);
+}
+
+.footer__sale2 {
+	color: rgba(237, 0, 3, 0.2);
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-left: -600px;
+}
+
+.footer__sale3 {
+	bottom: 120px;
+	right: 50%;
+	transform: translateX(50%);
+	margin-right: -500px;
+
+}
+
+.footer__info {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: absolute;
+	top: 120px;
+	right: 50%;
+	transform: translate(50%);
+	margin-right: -350px;
+}
+
+.footer__title {
+	font-family: "Bebas Neue";
+	font-weight: bold;
+	font-size: 72px;
+	line-height: 72px;
+	letter-spacing: 5px;
+	color: $white;
+	text-shadow: -20px 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.footer__info .price {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	margin-bottom: 30px;
+}
+
+.footer__info .new__price{
+	font-family: "Bebas Neue";
+	font-weight: bold;
+	font-size: 64px;
+	line-height: 64px;
+	letter-spacing: 5px;
+	color: $white;
+	margin: 0;
+	padding: 0;
+}
+
+.footer__info .old__price{
+	font-family: "Bebas Neue";
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 5px;
+	color: $red;
+	text-shadow: -20px 20px 50px rgba(0, 0, 0, 0.3);
+	margin: 0;
+	padding: 0;
+	border: none;
+	width: 72px;
+}
+
+
+.footer__info .old__price:before{
+	display: none;
+}
+
+.footer__info .old__price:after{
+	// display: none;
+	left: 0;
+	width: 72px;
+	background-color: $black;
+}

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./libs/slick-theme.css" />
 	<link rel="stylesheet" href="./libs/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="./libs/aos.css" />
+	<link rel="stylesheet" href="./libs/jquery.raty.css">
 	<link rel="stylesheet" href="./css/style.css" />
 	<title>Page Title</title>
 </head>
@@ -41,11 +42,11 @@
 					<div class="old__price">2650₴</div>
 				</div>
 				<div class="order">
-					<a href="#" class="order__link">
+					<a href="#card" class="order__link">
 						Заказать
 					</a>
 					<div class="time">
-						Акція діє до <span>02.03.2021</span>
+						Акция продлится до <span>02.03.2021</span>
 					</div>
 				</div>
 				<div class="header__btns-group">
@@ -86,17 +87,17 @@
 						<h3 class="advantage__title">Исключительно натуральная кожа </h3>
 						<p class="advantage__text">Сочетание спортивного силуэта и натуральных материалов</p>
 					</div>
-					<button class="rotation__btn rotation__btn-1 active"></button>
-					<button class="rotation__btn rotation__btn-2 active"></button>
-					<button class="rotation__btn rotation__btn-3 active"></button>
-					<button class="rotation__btn rotation__btn-4 active"></button>
-					<button class="rotation__btn rotation__btn-5 active"></button>
+					<button data-img="./img/rotate-boot1.png" data-advantage="advantage__1" class="rotation__btn rotation__btn-1 active"></button>
+					<button data-img="./img/rotate-boot2.png" data-advantage="advantage__2" class="rotation__btn rotation__btn-2"></button>
+					<button data-img="./img/rotate-boot3.png" data-advantage="advantage__3" class="rotation__btn rotation__btn-3"></button>
+					<button data-img="./img/rotate-boot4.png" data-advantage="advantage__4" class="rotation__btn rotation__btn-4"></button>
+					<button data-img="./img/rotate-boot5.png" data-advantage="advantage__5" class="rotation__btn rotation__btn-5"></button>
 					<img src="./img/rotate-boot1.png" alt="" class="rotation__boot rotation__boot-1 active">
 					<img src="./img/rotate-boot2.png" alt="" class="rotation__boot rotation__boot-2">
 					<img src="./img/rotate-boot3.png" alt="" class="rotation__boot rotation__boot-3">
 					<img src="./img/rotate-boot4.png" alt="" class="rotation__boot rotation__boot-4">
 					<img src="./img/rotate-boot5.png" alt="" class="rotation__boot rotation__boot-5">
-					<a href="#" class="order__link">
+					<a href="#card" class="order__link">
 						Заказать
 					</a>
 				</div>
@@ -146,7 +147,7 @@
 				</div>
 			</div>
 			<div class="second-section">
-				<div class="card card__1">
+				<div class="card card__1" id="card">
 					<div class="card__background">
 						<img src="./img/logo.png" alt="" class="card__logo">
 					</div>
@@ -192,7 +193,7 @@
 									</a>
 								</div>
 							</div>
-							<p class="card__info-sale">При покупці другої пари взуття знижка 200 $!</p>
+							<p class="card__info-sale">При покупке второй пары - скидка 200 грн!</p>
 						</div>
 						<div class="card__right">
 							<table class="card__table">
@@ -243,19 +244,19 @@
 									<span class="size">26.5</span>
 								</button>
 								<button class="size__btn">41
-									<span class="size">26.5</span>
+									<span class="size">27.5</span>
 								</button>
 								<button class="size__btn">42
-									<span class="size">26.5</span>
+									<span class="size">28</span>
 								</button>
 								<button class="size__btn">43
-									<span class="size">26.5</span>
+									<span class="size">28.5</span>
 								</button>
 								<button class="size__btn">44
-									<span class="size">26.5</span>
+									<span class="size">29</span>
 								</button>
 								<button class="size__btn">45
-									<span class="size">26.5</span>
+									<span class="size">29.5</span>
 								</button>
 							</div>
 							<div class="price">
@@ -308,7 +309,7 @@
 									</a>
 								</div>
 							</div>
-							<p class="card__info-sale">При покупці другої пари взуття знижка 200 $!</p>
+							<p class="card__info-sale">При покупке второй пары - скидка 200 грн!</p>
 						</div>
 						<div class="card__right">
 							<table class="card__table">
@@ -322,7 +323,7 @@
 								</tr>
 								<tr>
 									<td>Подкладка:</td>
-									<td>текстиль</td>
+									<td>комбинированая</td>
 								</tr>
 								<tr>
 									<td>Подошва:</td>
@@ -330,11 +331,11 @@
 								</tr>
 								<tr>
 									<td>Стиль:</td>
-									<td>comfort, active</td>
+									<td>comfort</td>
 								</tr>
 								<tr>
 									<td>Модель:</td>
-									<td>Puma Roma Basic</td>
+									<td>Puma Mercedes AMG Petronas</td>
 								</tr>
 								<tr>
 									<td>Вид товара:</td>
@@ -359,19 +360,19 @@
 									<span class="size">26.5</span>
 								</button>
 								<button class="size__btn">41
-									<span class="size">26.5</span>
+									<span class="size">27.5</span>
 								</button>
 								<button class="size__btn">42
-									<span class="size">26.5</span>
+									<span class="size">28</span>
 								</button>
 								<button class="size__btn">43
-									<span class="size">26.5</span>
+									<span class="size">28.5</span>
 								</button>
 								<button class="size__btn">44
-									<span class="size">26.5</span>
+									<span class="size">29</span>
 								</button>
 								<button class="size__btn">45
-									<span class="size">26.5</span>
+									<span class="size">29.5</span>
 								</button>
 							</div>
 							<div class="price">
@@ -434,13 +435,13 @@
 									</a>
 								</div>
 							</div>
-							<p class="card__info-sale">При покупці другої пари взуття знижка 200 $!</p>
+							<p class="card__info-sale">При покупке второй пары - скидка 200 грн!</p>
 						</div>
 						<div class="card__right">
 							<table class="card__table">
 								<tr>
 									<td>Сезон:</td>
-									<td>Весна</td>
+									<td>Зима</td>
 								</tr>
 								<tr>
 									<td>Верх:</td>
@@ -448,7 +449,7 @@
 								</tr>
 								<tr>
 									<td>Подкладка:</td>
-									<td>текстиль</td>
+									<td>натуральный мех</td>
 								</tr>
 								<tr>
 									<td>Подошва:</td>
@@ -460,11 +461,11 @@
 								</tr>
 								<tr>
 									<td>Модель:</td>
-									<td>Puma Roma Basic</td>
+									<td>Puma Tarrenz Winter</td>
 								</tr>
 								<tr>
 									<td>Вид товара:</td>
-									<td>Кроссовки</td>
+									<td>Ботинки</td>
 								</tr>
 								<tr>
 									<td>Пол:</td>
@@ -485,19 +486,19 @@
 									<span class="size">26.5</span>
 								</button>
 								<button class="size__btn">41
-									<span class="size">26.5</span>
+									<span class="size">27.5</span>
 								</button>
 								<button class="size__btn">42
-									<span class="size">26.5</span>
+									<span class="size">28</span>
 								</button>
 								<button class="size__btn">43
-									<span class="size">26.5</span>
+									<span class="size">28.5</span>
 								</button>
 								<button class="size__btn">44
-									<span class="size">26.5</span>
+									<span class="size">29</span>
 								</button>
 								<button class="size__btn">45
-									<span class="size">26.5</span>
+									<span class="size">29.5</span>
 								</button>
 							</div>
 							<div class="price">
@@ -517,15 +518,12 @@
 				<div class="sprey">
 					<div class="sprey__card">
 						<div class="sprey__card-left">
-							<div class="sprey__title">ЗАЩИТНЫЙ СПРЕЙ ДЛЯ ОБУВИ ECCO</div>
-							<p class="sprey__text">Универсальный защитный спрей, который помогает сохранить обувь и
-								аксессуары ECCO чистыми, сухими и без пятен.
-							</p>
-							<p class="sprey__text">Подходит для обуви из гладкой кожи, замши, нубука и ткани, прошел
-								тестовые испытания на коже и отделочных материалах ECCO. Подходит для обуви ECCO с
-								мембраной GORE-TEX.
+							<div class="sprey__title">ЗАЩИТНЫЙ СПРЕЙ ECCO</div>
+							<p class="sprey__text">
+								Легко ухаживать за обувью с помощью защитного спрея ECCO. Универсальное средство подходит для всех видов кожи, замши, нубука, текстиля, меха и синтетических материалов и помогает сохранить обувь и аксессуары в первозданном виде. 
 							</p>
 							<p class="sprey__info"><b>Объём:</b> 100 мл;</p>
+							<p class="sprey__info"><b>Цвет:</b> нейтральный;</p>
 							<div class="price">
 								<div class="old__price"><b>Цена:</b><span> 4250 грн</span></div>
 								<div class="new__price">599 грн</div>
@@ -540,7 +538,7 @@
 									Заказать
 								</button>
 								<div class="time">
-									Акція діє до <span>02.03.2021</span>
+									Акция продлится до <span>02.03.2021</span>
 								</div>
 							</form>
 						</div>
@@ -599,9 +597,165 @@
 					</div>
 					<div class="reviews__wrapper">
 						<div class="review">
-							<div class="review__left"></div>
+							<div class="review__left">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/review/4 (2).jpg" alt="" class="autor__foto-img">
+									</div>
+									<div class="autor__info">
+										<h4 class="autor__name">Алена</h4>
+										<ul class="star__raiting">
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-50.png" alt=""></li>
+											<li><img src="./img/star-transparent.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+								<div class="review__text">
+									<p class="review__paragraf">
+										Парню заказала кроссовочки, модель очень комфортная. Отлично держат стопу, амортизируют её, ноги не устают, и выглядят очень достойно. Думаем над еще одной парой, не пропадать же скидке)
+									</p>
+								</div>
+							</div>
 							<div class="review__foto">
-								<img src="./img/review1.png" alt="" class="review__img">
+								<img src="./img/review1.jpg" alt="" class="review__img">
+							</div>
+						</div>
+						<div class="review">
+							<div class="review__left">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/review/4 (1).jpg" alt="" class="autor__foto-img">
+									</div>
+									<div class="autor__info">
+										<h4 class="autor__name">Витя</h4>
+										<ul class="star__raiting">
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-50.png" alt=""></li>
+											<li><img src="./img/star-transparent.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+								<div class="review__text">
+									<p class="review__paragraf">
+										Кроссовки кожаные, кожа вполне хорошего качества. Сами кроссовки удобные в ходьбе.  Не жалею, что остановился на Puma. Юзаю несколько дней, никаких нареканий. 
+									</p>
+								</div>
+							</div>
+							<div class="review__foto">
+								<img src="./img/review1.jpg" alt="" class="review__img">
+							</div>
+						</div>
+						<div class="review">
+							<div class="review__left">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/review/4.jpg" alt="" class="autor__foto-img">
+									</div>
+									<div class="autor__info">
+										<h4 class="autor__name">Максим </h4>
+										<ul class="star__raiting">
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-50.png" alt=""></li>
+											<li><img src="./img/star-transparent.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+								<div class="review__text">
+									<p class="review__paragraf">
+										Взял себе черные кроссовки, и не смог устоять перед мерсами со скидкой. Puma за такие деньги, кто ж откажется! Качеством очень доволен.
+									</p>
+								</div>
+							</div>
+							<div class="review__foto">
+								<img src="./img/review1.jpg" alt="" class="review__img">
+							</div>
+						</div>
+						<div class="review">
+							<div class="review__left">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/review/5 (1).jpg" alt="" class="autor__foto-img">
+									</div>
+									<div class="autor__info">
+										<h4 class="autor__name">Артур</h4>
+										<ul class="star__raiting">
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-50.png" alt=""></li>
+											<li><img src="./img/star-transparent.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+								<div class="review__text">
+									<p class="review__paragraf">
+										Зима прошла, выбирал себе кеды на весну, остановился на Puma Roma basic белых.  Пошив аккуратный, вся грязь смывается легко (если сразу ухаживать, конечно), ногам удобно, подошва как будто облегчает ход. 
+									</p>
+								</div>
+							</div>
+							<div class="review__foto">
+								<img src="./img/review1.jpg" alt="" class="review__img">
+							</div>
+						</div>
+						<div class="review">
+							<div class="review__left">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/review/6 (2).jpg" alt="" class="autor__foto-img">
+									</div>
+									<div class="autor__info">
+										<h4 class="autor__name">Влад Жбанков</h4>
+										<ul class="star__raiting">
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-50.png" alt=""></li>
+											<li><img src="./img/star-transparent.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+								<div class="review__text">
+									<p class="review__paragraf">
+										Заказал две пары - кроссы и ботинки (хотел, но все не решался взять себе песчаного цвета ботинки). Прислали на следующий день, померял и забрал на новой почте. Кроссы удобные, ботинки опробую зимой. 
+									</p>
+								</div>
+							</div>
+							<div class="review__foto">
+								<img src="./img/review1.jpg" alt="" class="review__img">
+							</div>
+						</div>
+						<div class="review">
+							<div class="review__left">
+								<div class="review__autor">
+									<div class="autor__foto">
+										<img src="./img/review/6.jpg" alt="" class="autor__foto-img">
+									</div>
+									<div class="autor__info">
+										<h4 class="autor__name">Кирилл</h4>
+										<ul class="star__raiting">
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-bg.png" alt=""></li>
+											<li><img src="./img/star-50.png" alt=""></li>
+											<li><img src="./img/star-transparent.png" alt=""></li>
+										</ul>
+									</div>
+								</div>
+								<div class="review__text">
+									<p class="review__paragraf">
+										И Roma basic, и Мерседес круто сидят на ногах. Ношу с удовольствием сейчас, отлично даже для прохладной погоды. Мягкие, легкие, после такого качества обуви другой фирмы носить не хочется. Дешевле чем в фирменном магазине почти вдвое
+									</p>
+								</div>
+							</div>
+							<div class="review__foto">
+								<img src="./img/review1.jpg" alt="" class="review__img">
 							</div>
 						</div>
 					</div>
@@ -613,12 +767,60 @@
 				</div>
 			</div>
 		</main>
+		<footer>
+			<div class="footer__red-line"></div>
+			<img src="./img/footer-man.png" alt="" class="footer__man">
+			<img src="./img/white-boot1.png" alt="" class="footer__boot1">
+			<img src="./img/footer-boot.png" alt="" class="footer__boot2">
+			<img src="./img/basic.png" alt="" class="footer__logo">
+			<p class="footer__sale footer__sale1">-55%</p>
+			<p class="footer__sale footer__sale2">-55%</p>
+			<p class="footer__sale footer__sale3">-55%</p>
+			<div class="footer__info">
+				<h3 class="footer__title">Puma Roma</h3>
+				<div class="price">
+					<span class="new__price">1190₴</span>
+					<span class="old__price">2650₴</span>
+				</div>
+				<div class="footer__order">
+					<a href="#card" class="order__link">
+						Заказать
+					</a>
+					<div class="time">
+						Акция продлится до  <span>02.03.2021</span>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<div class="modal">
+			<form>
+				<div class="modal__autor">
+					<input type="text" class="name__input" placeholder="Имя" required>
+					<input type="file" name="file" id="file" class="input__file">
+					<label for="file" class="file">
+						<div></div>
+						<span>Добавить фото</span> 
+					</label>
+					<div class="modal__star-raiting">
+						Оценка: <div class="modal__raiting"></div>
+					</div>
+				</div>
+				<textarea cols="30" rows="10" class="modal__area" placeholder="Напишите ваш отзыв"></textarea>
+				<div class="modal__send">
+					<button type="submit" class="send">Отправить</button>
+				</div>
+			</form>
+		</div>
 	</div>
 	<script src="./libs/jquery.min.js"></script>
 	<script src="./libs/aos.js"></script>
 	<script src="./libs/slick.min.js"></script>
 	<script src="./libs/jquery.fancybox.min.js"></script>
 	<script src="./libs/carousel.js"></script>
+	<!-- <script src="./libs/jquery.rateyo.min.js"></script -->
+	<script src="./libs/jquery.raty.js"></script>
 	<script src="./js/lib.js"></script>
 	<script src="./js/main.js"></script>
 </body>

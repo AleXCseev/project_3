@@ -26,3 +26,8 @@ body {
 img {
 	user-select: none;
 }
+
+button, input, label{
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
