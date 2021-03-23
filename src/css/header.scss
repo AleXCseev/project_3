@@ -48,6 +48,24 @@
 	transition: all 1s ease;
 }
 
+@keyframes slide {
+	50% {
+		transform: translateY(-30px) skew(-25deg);
+	}
+	100% {
+		transform: translateY(0px) skew(-25deg);
+	}
+}
+
+@keyframes slideBack {
+	50% {
+		transform: translateY(30px) skew(-25deg);
+	}
+	100% {
+		transform: translateY(0px) skew(-25deg);
+	}
+}
+
 .header__boots-black {
 	width: 460px;
 }
@@ -60,22 +78,26 @@
 	top: -120px;
 	left: -100px;
 	width: 400px;
+	animation: slide 5s infinite;
 }
 
 .boot2.header__boots-white {
 	bottom: -100px;
 	right: -180px;
+	animation: slideBack 5s infinite;
 }
 
 .boot1.header__boots-black {
 	top: -140px;
 	left: -50px;
 	width: 400px;
+	animation: slide 5s infinite;
 }
 
 .boot2.header__boots-black {
 	bottom: -60px;
 	right: -180px;
+	animation: slideBack 5s infinite;
 }
 
 .header__sale {

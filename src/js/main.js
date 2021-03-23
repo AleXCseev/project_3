@@ -172,4 +172,15 @@ $(function () {
 	galary(".card__1")
 	galary(".card__2")
 	galary(".card__3")
+
+	function avtoGalary() {
+		if ($(".rotation__btn.active").next().hasClass("rotation__boot")) {
+			$(".rotation__btn-1").click()
+		} else {
+			$(".rotation__btn.active").next().click()
+		}
+	}
+	setInterval(function () {
+		avtoGalary()
+	}, 3000)
 })
