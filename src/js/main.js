@@ -173,14 +173,32 @@ $(function () {
 	galary(".card__2")
 	galary(".card__3")
 
+
+
 	function avtoGalary() {
-		if ($(".rotation__btn.active").next().hasClass("rotation__boot")) {
-			$(".rotation__btn-1").click()
-		} else {
-			$(".rotation__btn.active").next().click()
+		function clickBtn() {
+			if ($(".rotation__btn.active").next().hasClass("rotation__boot")) {
+				$(".rotation__btn-1").click()
+			} else {
+				$(".rotation__btn.active").next().click()
+			}
 		}
+		function int() {
+			clickBtn()
+		}
+		var interval = setInterval(int, 3000);
+		$(".rotation__boot, .rotation__btn").mouseover(function () {
+			clearInterval(interval)
+		})
+
+		$(".rotation__boot, .rotation__btn").mouseleave(function () {
+			interval = setInterval(int, 3000)
+		})
+
 	}
-	setInterval(function () {
-		avtoGalary()
-	}, 3000)
+
+	avtoGalary()
+
+
+
 })

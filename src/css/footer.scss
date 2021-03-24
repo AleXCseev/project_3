@@ -48,9 +48,10 @@ footer {
 .footer__logo {
 	position: absolute;
 	top: 0px;
-	right: 10%;
-	// transform: translateX(-50%);
+	right: 50%;
+	transform: translateX(50%);
 	width: 500px;
+	margin-right: -520px;
 }
 
 .footer__sale {
@@ -153,4 +154,12 @@ footer {
 	left: 0;
 	width: 72px;
 	background-color: $black;
+}
+
+.footer-dev {
+	position: absolute;
+	bottom: 5px;
+	right: 30px;
+	color: #fff;
+	z-index: 100000;
 }

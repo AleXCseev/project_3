@@ -532,8 +532,10 @@
 							<p class="sprey__text">
 								Легко ухаживать за обувью с помощью защитного спрея ECCO. Универсальное средство подходит для всех видов кожи, замши, нубука, текстиля, меха и синтетических материалов и помогает сохранить обувь и аксессуары в первозданном виде. 
 							</p>
-							<p class="sprey__info"><b>Объём:</b> 100 мл;</p>
-							<p class="sprey__info"><b>Цвет:</b> нейтральный;</p>
+							<p class="sprey__info">
+								<b>Объём:</b> 100 мл;<br>
+								<b>Цвет:</b> нейтральный;
+							</p>
 							<div class="price">
 								<div class="old__price"><b>Цена:</b><span> 4250 грн</span></div>
 								<div class="new__price">599 грн</div>
@@ -558,46 +560,56 @@
 			<div class="third-section">
 				<div class="main__galary">
 					<div class="main__galary-wrapper">
-						<div class="main__galary-box">
+						<div class="main__galary-box main__galary-box1">
 							<a data-fancybox="main-galary" href="./img/main-galary/1.jpg">
 								<img src="./img/main-galary/1.jpg" alt="" class="main__galary-img">
 							</a>
 						</div>
-						<div class="main__galary-box">
+						<div class="main__galary-box main__galary-box2">
 							<a data-fancybox="main-galary" href="./img/main-galary/2.jpg">
 								<img src="./img/main-galary/2.jpg" alt="" class="main__galary-img">
 							</a>
 						</div>
-						<div class="main__galary-box">
+						<div class="main__galary-box main__galary-box3">
 							<a data-fancybox="main-galary" href="./img/main-galary/3.jpg">
 								<img src="./img/main-galary/3.jpg" alt="" class="main__galary-img">
 							</a>
 						</div>
-						<div class="main__galary-box">
+						<div class="main__galary-box main__galary-box4">
 							<a data-fancybox="main-galary" href="./img/main-galary/4.jpg">
 								<img src="./img/main-galary/4.jpg" alt="" class="main__galary-img">
 							</a>
 						</div>
-						<div class="main__galary-box">
+						<div class="main__galary-box main__galary-box5">
 							<a data-fancybox="main-galary" href="./img/main-galary/5.jpg">
 								<img src="./img/main-galary/5.jpg" alt="" class="main__galary-img">
 							</a>
 						</div>
-						<div class="main__galary-box">
+						<div class="main__galary-box main__galary-box6">
 							<a data-fancybox="main-galary" href="./img/main-galary/6.jpg">
 								<img src="./img/main-galary/6.jpg" alt="" class="main__galary-img">
 							</a>
 						</div>
-						<div class="main__galary-box">
+						<div class="main__galary-box main__galary-box7">
 							<a data-fancybox="main-galary" href="./img/main-galary/7.jpg">
 								<img src="./img/main-galary/7.jpg" alt="" class="main__galary-img">
 							</a>
 						</div>
-						<div class="main__galary-box">
+						<div class="main__galary-box main__galary-box8">
 							<a data-fancybox="main-galary" href="./img/main-galary/8.jpg">
 								<img src="./img/main-galary/8.jpg" alt="" class="main__galary-img">
 							</a>
 						</div>
+					</div>
+					<div class="move__mark">
+						<a class="move" href="#"></a>
+						<a class="move" href="#"></a>
+						<a class="move" href="#"></a>
+						<a class="move" href="#"></a>
+						<a class="move" href="#"></a>
+						<a class="move" href="#"></a>
+						<a class="move" href="#"></a>
+						<a class="move" href="#"></a>
 					</div>
 				</div>
 				<div class="reviews">
@@ -801,16 +813,19 @@
 					</div>
 				</div>
 			</div>
+			<div class="footer-dev">Разработка лендинга<a target="_blank" class="itcre-link" href="https://itcreative.info"> itcreative.info</a></div>
 		</footer>
 
 
 		<div class="modal">
-			<form>
+			<form class="active">
 				<div class="modal__autor">
 					<input type="text" class="name__input" placeholder="Имя" required>
 					<input type="file" name="file" id="file" class="input__file">
 					<label for="file" class="file">
-						<div></div>
+						<div>
+							<img src="" alt="">
+						</div>
 						<span>Добавить фото</span> 
 					</label>
 					<div class="modal__star-raiting">
@@ -822,8 +837,16 @@
 					<button type="submit" class="send">Отправить</button>
 				</div>
 			</form>
+			<div class="send__window">
+				<div class="send__img">
+					<img src="./img/mailing.png" alt="" class="modal__send-img">
+				</div>
+				<div class="send__massage">Спасибо за ваш отзыв, 
+					он появится на сайте после проверки модератором</div>
+			</div>
 		</div>
 	</div>
+	
 	<script src="./libs/jquery.min.js"></script>
 	<script src="./libs/jquery.touchSwipe.min.js"></script>
 	<script src="./libs/aos.js"></script>
