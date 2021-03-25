@@ -125,6 +125,9 @@
 	.order__link {
 		box-shadow: 15px 15px 40px rgba(136, 0, 2, 0.35);
 	}
+	.order__link:hover {
+		box-shadow: 0px 0px 20px 7px rgba(237, 0, 3, 0.4);
+	}
 	.time {
 		font-family: "Montserat";
 		font-weight: normal;

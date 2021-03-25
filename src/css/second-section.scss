@@ -158,6 +158,11 @@
 	height: 90px;
 	position: relative;
 	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.card__galary-fotos:hover {
+	transform: translateY(-5px);
 }
 
 .card__galary-img {
@@ -271,6 +276,9 @@
 		opacity: 1;
 		visibility: visible;
 	}
+}
+.size__btn:hover {
+	border: 1px solid $dark-red;
 }
 
 .card .price {

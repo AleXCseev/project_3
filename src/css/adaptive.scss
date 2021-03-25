@@ -51,7 +51,7 @@
 		width: 1300px;
 	}
 	.card__background {
-		width: 740px;
+		width: 760px;
 	}
 	.card__logo {
 		width: 300px;
@@ -797,7 +797,7 @@
 	.card__left-img {
 		top: 0px;
 		width: 600px;
-		// margin-left: -20px;
+		margin-left: -10px;
 	}
 	.card__3 .card__left-img {
 		top: -60px;
@@ -896,9 +896,6 @@
 		width: 120px;
 		height: 90px;
 	}
-	.reviews__wrapper {
-		width: 200px;
-	}
 	.review {
 		min-width: 650px;
 	}
@@ -970,6 +967,25 @@
 	}
 	.footer__info .price {
 		margin-bottom: 200px;
+	}
+	.modal {
+		width: 668px;
+		height: 398px;
+	}
+	.modal__area {
+		margin-bottom: 75px;
+	}
+	.modal__autor {
+		justify-content: flex-start;
+	}
+	.file {
+		margin-left: 30px;
+	}
+	.modal__star-raiting {
+		position: absolute;
+		left: 50px;
+		width: 200px;
+		bottom: 115px;
 	}
 }
 
@@ -1245,6 +1261,47 @@
 		left: 50%;
 		transform: translateX(-50%);
 		top: -120px;
+	}
+	.modal {
+		width: 290px;
+		height: 508px;
+		padding: 20px;
+	}
+	.modal form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.modal__area {
+		margin-bottom: 75px;
+	}
+	.modal__autor {
+		height: 170px;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: 0;
+	}
+	.file {
+		order: 1;
+		margin-left: 0px;
+	}
+	.name__input {
+		order: 2;
+	}
+	.modal__area {
+		height: 168px;
+		margin: 0;
+	}
+	.modal__star-raiting {
+		order: 3;
+		position: relative;
+		left: auto;
+		width: 100%;
+		height: 50px;
+		bottom: auto;
+		justify-content: flex-start;
 	}
 }
 
