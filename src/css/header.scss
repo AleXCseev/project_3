@@ -34,11 +34,13 @@
 	bottom: -60px;
 	z-index: 10;
 	transition: all 1s ease;
+	pointer-events: none;
 }
 
 .header__men.active {
 	opacity: 1;
 	visibility: visible;
+	pointer-events: none;
 }
 
 .header__boots {
@@ -46,6 +48,7 @@
 	visibility: hidden;
 	width: 530px;
 	transition: all 1s ease;
+	pointer-events: none;
 }
 
 @keyframes slide {
@@ -68,6 +71,7 @@
 
 .header__boots-black {
 	width: 460px;
+	pointer-events: none;
 }
 
 .header__boots.active {
@@ -292,6 +296,7 @@
 	cursor: pointer;
 	outline: none;
 	position: relative;
+	overflow: visible;
 }
 
 .header__btn.active {
@@ -308,4 +313,5 @@
 	left: 50%;
 	transform: translate(-50%, -50%) skew(-25deg);
 	width: 100px;
+	z-index: 50;
 }

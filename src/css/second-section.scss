@@ -80,10 +80,16 @@
 	top: 0px;
 	left: 50%;
 	transform: translateX(-50%);
+	margin-left: -15px;
+	pointer-events: none;
 }
 
 .card__3 .card__left-img {
-	top: -70px;
+	top: -20px;
+}
+
+.card__3 .card__left-img[src="./img/card3-black.png"] {
+	width: 600px;
 }
 
 .card__toggle {
@@ -172,6 +178,7 @@
 	transform: translate(-50%, -50%);
 	width: 140px;
 	height: 90px;
+	pointer-events: auto;
 }
 
 .card__info-sale {
@@ -189,6 +196,7 @@
 	width: 450px;
 	// margin-top: -55px;
 	height: auto;
+	margin-left: 100px;
 }
 
 .card__table {
@@ -318,15 +326,24 @@
 	width: 340px;
 	height: 50px;
 	line-height: 50px;
-	padding: 20px;
-	font-family: Poppins;
+	padding: 0px 20px;
+	font-family: "Montserat";
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
 	color: $black;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .card__form-input::placeholder {
 	color: $black;
+	font-family: "Montserat";
+	font-style: normal;
+}
+
+.card .time {
+	display: none;
 }
 

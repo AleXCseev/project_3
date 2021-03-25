@@ -111,7 +111,7 @@ $(function () {
 		}
 	}
 
-	carousel(".galary__wrapper", ".galary__block .move__mark");
+	carousel(".galary__wrapper", ".galary .move__mark");
 	carousel(".main__galary-wrapper", ".main__galary .move__mark");
 
 	Date.prototype.daysInMonth = function () {
@@ -268,7 +268,6 @@ $(function () {
 				.hide()
 				.attr("src", $(selector + " .card__left-img").attr("data-" + string))
 				.fadeIn(1000);
-			console.log($(selector + " .card__left-img"))
 			$(galaryFototsSelector).each(function () {
 				$(this)
 					.hide()

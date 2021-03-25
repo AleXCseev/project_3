@@ -14,6 +14,7 @@
 	box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.25);
 	margin-top: 49px;
 	display: flex;
+	justify-content: space-between;
 }
 
 .sprey__card-left {
@@ -42,6 +43,7 @@
 	line-height: 21px;
 	color: $black;
 	margin-bottom: 16px;
+	width: 100%;
 }
 
 .sprey__info {
@@ -60,7 +62,7 @@
 }
 
 .sprey .old__price {
-	font-family: "Montserrat";
+	font-family: "Montserat";
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 17px;
@@ -70,7 +72,10 @@
 	border: none;
 	padding: 0;
 	margin: 0;
-	
+	.bold {
+		font-family: "Montserat";
+		font-weight: bold;
+	}
 	span {
 		text-decoration: line-through;
 	}
@@ -99,7 +104,7 @@
 
 .sprey__card-right {
 	position: relative;
-	width: 100%;
+	width: 620px;
 	height: 100%;
 	padding: 40px 40px 40px 210px;
 }

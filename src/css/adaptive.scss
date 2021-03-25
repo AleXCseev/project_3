@@ -1,3 +1,9 @@
+@media (max-width: 1680px) {
+	.main__title {
+		display: none;
+	}
+}
+
 @media (max-width: 1600px) {
 	header {
 		background-size: 60%, 40%;
@@ -216,6 +222,9 @@
 		width: 780px;
 		margin-left: -160px;
 	}
+	.card__right {
+		margin: 0;
+	}
 	.card__logo {
 		// width: 300px;
 		display: none;
@@ -233,7 +242,7 @@
 		height: 360px;
 	}
 	.main__galary-wrapper {
-		width: 900px;
+		width: 860px;
 		height: 310px;
 	}
 	.main__galary-img {
@@ -327,6 +336,10 @@
 		width: 600px;
 	}
 	.card__left-img[src="./img/card1-black.png"] {
+		width: 500px;
+	}
+	.card__3 .card__left-img, 
+	.card__3 .card__left-img[src="./img/card3-black.png"]{
 		width: 500px;
 	}
 	.main__galary {
@@ -725,6 +738,11 @@
 		width: 130px;
 		bottom: 180px;
 	}
+	.rotation__boot-4 {
+		width: 280px;
+		bottom: 120px;
+		margin-left: 20px;
+	}
 	.galary {
 		height: 450px;
 	}
@@ -776,8 +794,8 @@
 	.card__left-galary {
 		width: 100%;
 		max-width: 600px;
-		height: auto;
 		flex-wrap: wrap;
+		height: 90px;
 	}
 	.card__galary-fotos {
 		width: 140px;
@@ -800,7 +818,7 @@
 		margin-left: -10px;
 	}
 	.card__3 .card__left-img {
-		top: -60px;
+		top: -20px;
 	}
 	.card__left-img[src="./img/card1-black.png"] {
 		width: 530px;
@@ -1391,7 +1409,10 @@
 		display: flex;
 		justify-content: center;
 		position: absolute;
-		bottom: -20px;
+		bottom: 20px;
+		margin-left: -20px;
+		left: 50%;
+		transform: skew(-40deg) translateX(-50%);
 	}
 	.move {
 		width: 6px;
@@ -1404,7 +1425,7 @@
 		background-color: #fff;
 	}
 	.galary__btns-group {
-		margin-top: 80px;
+		margin-top: 90px;
 		justify-content: center;
 	}
 	.card__left {
@@ -1427,11 +1448,26 @@
 		top: -40px;
 		width: 350px;
 	}
+	.card__3 .card__left-img[src="./img/card3-black.png"]{
+		width: 400px;
+	}
 	.card__toggle {
 		margin-bottom: 5px;
 	}
 	.card__left-galary {
 		max-width: 283px;
+		height: 186px;
+	}
+	.card .time {
+		font-family: "Montserat";
+		display: block;
+		color: $black;
+		margin-top: 10px;
+		font-size: 10px;
+		line-height: 10px;
+		text-align: center;
+		letter-spacing: normal;
+		font-weight: bold;
 	}
 	.sprey__card {
 		width: 500px;
@@ -1458,6 +1494,12 @@
 	}
 	.main__galary {
 		height: 240px;
+		.move__mark {
+			bottom: -20px;
+			transform: none;
+			transform: translateX(-50%);
+			margin-left: 0;
+		}
 	}
 	.main__galary:before {
 		width: calc(100% - 100px);
@@ -1583,9 +1625,12 @@
 	}
 	.header__men {
 		width: 300px;
-		bottom: 280px;
+		bottom: 285px;
 		left: 50%;
 		margin-left: -20px;
+	}
+	.header__men-white {
+		bottom: 290px;
 	}
 	.header__sale {
 		top: 183px;
@@ -1739,7 +1784,14 @@
 	}
 	.sprey__card {
 		width: 400px;
-		height: 860px;
+		// height: 860px;
+		height: auto;
+	}
+	.sprey__card-right {
+		height: auto;
+	}
+	.sprey__card-left {
+		height: auto;
 	}
 	.sprey__title {
 		width: 100%;

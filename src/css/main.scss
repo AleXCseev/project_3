@@ -25,9 +25,10 @@ body {
 
 img {
 	user-select: none;
+	pointer-events: none;
 }
 
-button, input, label{
+button, input, label, img{
 	appearance: none;
 	-webkit-tap-highlight-color: transparent;
 }
